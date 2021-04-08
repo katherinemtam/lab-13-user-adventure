@@ -54,3 +54,6 @@
 ### JS
 - on load
     - display results based on current state
+- on submit
+    - clear localStorage
+    - redirect to character creation page
