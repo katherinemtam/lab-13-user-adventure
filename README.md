@@ -10,3 +10,47 @@
 8) Consider your data model. What objects will you be using? What are the key/value pairs? What arrays do you need? What needs to live in local storage?
 9) Consider what features _depend_ on what other features. Use this dependency logic to figure out what order to complete tasks.
 
+## State
+- initialize hp, gold, quest completion
+- username
+
+## Character Creation
+### HTML
+- form with a button
+
+### JS
+- on submit
+    - username, class -> localStorage
+    - set hp, gold, quest completion state
+## Map
+### HTML
+- div for map
+
+### JS
+- on load
+    - if user dead || game over, redirect to results page
+    - check quests comepletion
+    - disable completed quests
+    - link uncompleted quests
+        - URL links to query params  
+
+## Quests
+### HTML
+- div for quest info
+
+### JS
+- on load
+    - get quest from query params should appear
+    - use object to render data
+- on submit
+    - view selected choice
+    - update states for hp, gold, and question completion
+    - choice description appears
+    - redirect to map
+## Results
+### HTML
+- div for results
+
+### JS
+- on load
+    - display results based on current state
