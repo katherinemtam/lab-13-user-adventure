@@ -45,7 +45,7 @@ const monsters = {
 
 const dragon = {
     id: 'dragon',
-    title: 'A HAIRY!!! Dragon',
+    title: "Daenery's Dragon",
     map: {
         top: '17%',
         left: '37%'
