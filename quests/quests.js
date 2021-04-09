@@ -1,6 +1,9 @@
 import quests from '../data.js';
 import { findById } from '../utils/utils.js';
 import { updateUserInfo } from '../utils/local-storage-utils.js';
+import { renderProfile } from '../utils/render-utils.js';
+
+renderProfile();
 
 const section = document.querySelector('section');
 
