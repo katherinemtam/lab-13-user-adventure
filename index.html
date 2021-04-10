@@ -9,62 +9,67 @@
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/home.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;800&display=swap" rel="stylesheet">
     <title>Character Creation</title>
 </head>
 
 <body>
     <header>
-        <div class="gutter-right logo">
 
-        </div>
     </header>
     <main>
+        <section class="intro">
+
+        </section>
         <section class="main-section">
+
             <h2>
-                You are about to enter...
+                Profile Creation
             </h2>
-            <p>
-                Insert some story about the journet youre about to embark
+            <p class="instructions">
+                Let's set up your profile! Timmy and Tommy will be flying to the island with you to help you get
+                settled. Please fill out the application below to get started.
             </p>
             <form>
                 <label>
                     <p>What's your character name?</p>
-                    <input name="username" placeholder="username" />
+                    <input name="username" placeholder="name" />
                 </label>
                 <fieldset>
-                    <legend>Choose your specialty:</legend>
+                    <legend>Select a starter item:</legend>
                     <label>
-                        <input type="radio" name="class" required value="warrior">
+                        <input type="radio" name="item" required value="shovel">
                         <img src="assets/">
-                        Warrior
+                        Shovel
                     </label>
                     <label>
-                        <input type="radio" name="class" required value="assassin">
+                        <input type="radio" name="item" required value="axe">
                         <img src="assets/">
-                        Assassin
+                        Axe
                     </label>
                     <label>
-                        <input type="radio" name="class" required value="wizard">
+                        <input type="radio" name="item" required value="net">
                         <img src="assets/">
-                        Wizard
+                        Net
                     </label>
                     <label>
-                        <input type="radio" name="class" required value="cleric">
+                        <input type="radio" name="item" required value="fishing-rod">
                         <img src="assets/">
-                        Cleric
+                        Fishing Rod
                     </label>
                     <label>
-                        <input type="radio" name="class" required value="bard">
+                        <input type="radio" name="item" required value="slingshot">
                         <img src="assets/">
-                        Bard
+                        Slingshot
                     </label>
                 </fieldset>
-                <button>Begin Your Journey</button>
+                <button>Fly to your island!</button>
             </form>
         </section>
     </main>
     <footer>
-        <div class="copy gutter-right">&copy; 2020 Alchemy Code Lab</div>
+        <div class="copy gutter-right">&copy; 2021 Isabelle5ever</div>
     </footer>
 
     <script type="module" src="app.js"></script>

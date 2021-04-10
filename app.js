@@ -8,11 +8,11 @@ form.addEventListener('submit', (event) => {
     const data = new FormData(form);
 
     const userName = data.get('username');
-    const userClass = data.get('class');
+    const userItem = data.get('item');
 
     const user = {
         name: userName,
-        class: userClass,
+        item: userItem,
         hp: 35,
         gold: 0,
         completed: {}

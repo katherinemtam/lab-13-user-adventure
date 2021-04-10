@@ -27,7 +27,12 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: calc(var(--footer-height));
+    width: 100%;
+    background-image: url('../assets/map.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+    
 }
 
 section {

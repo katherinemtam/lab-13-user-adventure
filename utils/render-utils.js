@@ -5,7 +5,7 @@ export function renderProfile() {
     const user = getUser();
 
     const userTitles = document.createElement('div');
-    userTitles.textContent = `name: ${user.name} class: ${user.class}`;
+    userTitles.textContent = `name: ${user.name} item: ${user.class}`;
 
     const userStats = document.createElement('div');
     userStats.textContent = `HP: ${user.hp}, gold: ${user.gold}`;
