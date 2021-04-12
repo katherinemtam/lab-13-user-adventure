@@ -5,8 +5,8 @@ const museum = {
     id: 'museum',
     title: 'Night in the Museum',
     map: {
-        top: '89%',
-        left: '44%'
+        top: '25%',
+        left: '65%'
     },
     image: 'museum.jpg',
     description: `
@@ -15,6 +15,7 @@ const museum = {
     choices: [{
         id: 'donate',
         description: 'Make a donation to Blathers.',
+        image: 'museum/blathers.png',
         quote: `
             Blathers: "Hoo-HOO! Let us take a look, shall we? Splendid! We will gladly take these off your hands!"
         `,
@@ -26,6 +27,7 @@ const museum = {
     }, {
         id: 'wish',
         description: 'Wish upon a shooting star with Celeste.',
+        image: 'museum/celeste.png',
         quote: `
             Celeste: “Hootie-toot and a very good evening to you! Have you ever heard that a wish upon a falling star will bring you good fortune? The stars above, falling all the way to earth just to hear our wishes…Isn’t that a lovely, romantic idea?”
         `,
@@ -37,6 +39,7 @@ const museum = {
     }, {
         id: 'coffee',
         description: 'Grab a cup of coffee from Brewster.',
+        image: 'museum/brewster.png',
         quote: `
             Brewster: “All right then, before it gets cold... One fresh brewed cup... Enjoy.”
         `,
@@ -52,8 +55,8 @@ const residentialServices = {
     id: 'residentialServices',
     title: 'Residential Services',
     map: {
-        top: '17%',
-        left: '37%'
+        top: '57%',
+        left: '40%'
     },
     image: 'residential-services.jpg',
     description: `
@@ -62,6 +65,7 @@ const residentialServices = {
     choices: [{
         id: 'tomNook',
         description: 'Plan some island development with Tom Nook.',
+        image: 'residential-services/tom-nook.jpg',
         quote: `
             Tom Nook: “I'm quite glad that I'll be sharing this desolate island with such a hard worker, oho! We don't do things because they are easy hm? We do them because they are profitable. With that said, upgrading your house will bring your grand total to the modest sum of 49,800 bells.”
         `,
@@ -73,6 +77,7 @@ const residentialServices = {
     }, {
         id: 'isabelle',
         description: 'Recieve residential support from Isabelle.',
+        image: 'residential-services/isabelle.jpg',
         quote: `
             Isabelle: “I've found that my cheery disposition can be quite intimadting in certain contexts. Please don't hesitate to let me know if I can help you with something!”
         `,
@@ -84,6 +89,7 @@ const residentialServices = {
     }, {
         id: 'slider',
         description: 'Listen to K.K Slider at the Town Plaza.',
+        image: 'residential-services/kk-slider.jpg',
         quote: `
             K.K. Slider: “Hey there, cool cats and kittens. The name's K.K. Slider. Live jams make for a real keen scene. Nothing beats a whole crowd getting down together. Oh, they're telling me I've gotta fill a little more time...Want me to jam for you?”
         `,
@@ -99,8 +105,8 @@ const airline = {
     id: 'airline',
     title: 'Dodo Airlines',
     map: {
-        top: '31%',
-        left: '5%'
+        top: '83%',
+        left: '43%'
     },
     prerequisites: ['dragon', 'monsters'],
     image: 'airline.jpg',
@@ -112,6 +118,7 @@ const airline = {
     choices: [{
         id: 'harv',
         description: "Visit Photopia at Harv's Island.",
+        image: 'airline/harvey.jpg',
         quote: `
             Orville: “Almond jelly static! Looks like we got a whole lotta radio chatter goin' on over yonder...” 
             Harvey: “...Hey! I hear you. We're still groovy, and the anniversary shoot's gonna happen. Hmmm...Well, OK, but...what'll we do about the lovely sets? Prepping them ourselves could get a bit ticklish...Hey there. You got good timing, you know that? Can I, like, borrow you for a minute? OK, so this here is Reese...and her main squeeze, Cyrus. They're married and in love, um...a whole bunch. Far out, right? Anyway, they wanna get some anniversary photos made. Fancy ones. With sets and stuff. Long story, uh...long, I need someone to move stuff around so it looks wedding-y, then snap some photos. So, think I could ask you to be taht someone? You'd really be helping this shutterdog out.”
@@ -124,6 +131,7 @@ const airline = {
     }, {
         id: 'mysteryIsland',
         description: 'Use a Nook Miles Ticket to explore a mystery Island.',
+        image: 'airline/wilbur.jpg',
         quote: `
             Orville: “First time getting your pontoons wet on tour? Let me brief you on mystery island procedure. First, we run the "finders keepers" protocol here. Lumber, fruit, fish, whatever? Yours if you can carry it. Also, there's one redline item you need to memorize like your favorite latte order...Anything you leave behing stays here. We dont't come back to these places. Ever. I actually burn the flight plans afterward. Security reasons. Can't explain more than that. Think that's everything. Go explore. If you get into trouble, ask yourself, "What would dodos do?" Go catch some bees and chop some trees!”
         `,
@@ -135,6 +143,7 @@ const airline = {
     }, {
         id: 'letter',
         description: 'Send a letter to a friend.',
+        image: 'airline/orville.jpg',
         quote: `
             Orville: “Oh, hey, ${user.name}! Before you can use the service, though, the legal eagles say I gotta show you the fine print. Would you read through this for me so I don't get in trboule?”
         `,

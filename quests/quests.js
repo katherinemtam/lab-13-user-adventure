@@ -47,6 +47,14 @@ choiceForm.addEventListener('submit', (event) => {
 
     updateUserInfo(questId, choice);
 
+    image.classList.add('hidden');
+    const resultImage = document.createElement('img');
+    resultImage.src = '../assets/' + choice.image;
+
+    pDescription.classList.add('hidden');
+    const pDescriptionReload = document.createElement('p');
+    pDescriptionReload.textContent = quest.description;
+
     choiceForm.classList.add('hidden');
     const resultSection = document.createElement('div');
     resultSection.classList.add('result-section');
@@ -56,7 +64,8 @@ choiceForm.addEventListener('submit', (event) => {
     quote.style.backgroundColor = 'rgba(129, 241, 247, 0.75)';
     quote.style.border = '3px solid rgb(129, 241, 247)';
     quote.style.borderRadius = '50px';
-    quote.style.padding = '10px';
+    quote.style.padding = '20px';
+    quote.style.margin = '10px';
     quote.style.fontSize = 'large';
     quote.style.fontWeight = 'bold';
 
@@ -66,6 +75,7 @@ choiceForm.addEventListener('submit', (event) => {
     result.style.border = '3px solid rgb(57, 255, 176)';
     result.style.borderRadius = '50px';
     result.style.padding = '20px';
+    result.style.margin = '10px';
     result.style.fontSize = 'large';
     result.style.fontWeight = 'bold';
 
@@ -81,6 +91,6 @@ choiceForm.addEventListener('submit', (event) => {
     anchorTag.href = '../map';
 
     resultSection.append(quote, result, anchorTag);
-    section.append(resultSection);
+    section.append(resultImage, pDescriptionReload, resultSection);
 });
 

@@ -33,7 +33,7 @@ if (user.gold <= 0 && user.hp <= 0) {
     goldStatus = aliveGoldMessages.rich;
 }
 
-section.textContent = `${hpStatus}. ${goldStatus}`;
+section.textContent = `${hpStatus} ${goldStatus}`;
 
 button.addEventListener('click', () => {
     localStorage.clear();

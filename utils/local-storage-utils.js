@@ -20,12 +20,3 @@ export function updateUserInfo(questId, choice) {
 
     setUser(user);
 }
-
-export function allQuestsCompleted(quests, user) {
-    for (let quest of quests) {
-        if (!user.completed[quest.id]) {
-            return false;
-        }
-    }
-    return true;
-}
