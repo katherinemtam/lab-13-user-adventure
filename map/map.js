@@ -2,13 +2,18 @@ import quests from '../data.js';
 import { getUser, allQuestsCompleted } from '../utils/local-storage-utils.js';
 import { renderProfile } from '../utils/render-utils.js';
 
-const section = document.querySelector('section');
 const user = getUser();
-const userIsDead = user.hp <= 0;
+
+const section = document.querySelector('section');
+const island = document.createElement('div');
+island.textContent = user.island;
+
+const userDied = user.hp <= 0;
+section.append(island);
 
 renderProfile();
 
-if (userIsDead || allQuestsCompleted(quests, user)) {
+if (userDied || allQuestsCompleted(quests, user)) {
     window.location = '../results/index.html';
 }
 

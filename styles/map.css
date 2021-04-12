@@ -53,16 +53,32 @@ section {
 
 header {
     display: flex;
-    justify-content: flex-end;
-    background-color: var(--color3);
+    justify-content:space-between;
     height: var(--header-height);
     box-shadow: var(--shadow);
+    background-color: rgba(255, 245, 99, 0.808);
+    border: 2px solid rgba(196, 141, 63, 0.808);
 }
 
 .logo {
     width: 150px;
-    margin: 10px 0px;
-    a
+    margin: 10px 20px;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 0px 20px;
+    font-weight: 600;
+    font-family: 'Open Sans', sans-serif;
+    font-size: large;
+    color: rgba(75, 37, 26, 0.787);
+}
+
+header div {
+    padding: 5px;
 }
 
 footer {
@@ -76,16 +92,6 @@ footer {
 h2 {
     font-size: 1.8rem;
     font-weight: bold;
-}
-
-
-
-
-.profile {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
 }
 
 p {
