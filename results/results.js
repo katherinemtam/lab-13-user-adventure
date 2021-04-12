@@ -5,7 +5,7 @@ import { aliveGoldMessages, deadGoldMessages, hpMessages } from './messages.js';
 renderProfile();
 
 const section = document.querySelector('section');
-const button = document.createElement('button');
+const button = document.querySelector('button');
 
 const user = getUser();
 
@@ -33,7 +33,6 @@ if (user.gold <= 0 && user.hp <= 0) {
     goldStatus = aliveGoldMessages.rich;
 }
 
-button.textContent = 'Play Again!';
 section.textContent = `${hpStatus}. ${goldStatus}`;
 
 button.addEventListener('click', () => {
@@ -41,4 +40,3 @@ button.addEventListener('click', () => {
     window.location = '../index.html';
 });
 
-section.append(button);

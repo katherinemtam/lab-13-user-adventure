@@ -107,7 +107,7 @@ const airline = {
     description: `
         Orville: “Hey hey hey! Welcome to your one and only gateway to the skies, ${user.island} Airport. Let me call Wilbur: Dodo One, this is Dodo Tower. Wilbur, you copy? Got a walker who needs wings, over.” 
         Wilbur: “Roger! Ready when you are!” 
-        Orvile: “So...just to get the paperwork all official, where didja want to go?”
+        Orville: “So...just to get the paperwork all official, where didja want to go?”
     `,
     choices: [{
         id: 'harv',

@@ -18,7 +18,7 @@ body {
     --gutter: 30px;
     --footer-height: 25px;
     
-    font-family: 'Titillium Web', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     background-image: url('../assets/background2.png');
 }
 
@@ -84,10 +84,21 @@ footer {
 
 
 h2 {
-    font-size: 1.8rem;
     font-weight: bold;
+    font-size: 40px;
+    font-weight: 800;
+    font-family: 'Open Sans', sans-serif;
+    color: rgba(75, 37, 26, 0.808);
+    background-color: rgba(199, 123, 63, 0.808);; 
+    border: 2px solid rgba(75, 37, 26, 0.808);
+    border-radius: 50px;
+    padding: 10px;
+    margin: 30px;
 }
 
+img {
+    height: 500px;
+}
 
 header img {
     height: var(--header-height);
@@ -95,6 +106,49 @@ header img {
 
 p {
     margin: var(--gutter);
+    background-color: rgba(129, 241, 247, 0.75);
+    border: 3px solid rgb(129, 241, 247);
+    border-radius: 50px;
+    padding: 20px;
+    font-size: large;
+    font-weight: bold;
+    background-color: rgba(255, 245, 99, 0.808);
+    border: 5px solid rgba(196, 141, 63, 0.808);
+    border-radius: 50px;
+    width: 900px;
+    margin: 10px;
+
+}
+
+button {
+    background-color: rgb(57, 255, 176, 0.76);
+    color: rgba(75, 37, 26, 0.808);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+    border: 1px solid rgba(157,255,176, 0.753);
+    border-radius: 50px;
+    padding: 5px;
+    margin-top: 10px;
+    
+}
+
+form {
+    margin: var(--gutter);
+    background-color: rgba(255, 255, 250, 0.75);
+    border: 3px solid rgb(57, 255, 176);
+    border-radius: 50px;
+    padding: 20px;
+    font-size: large;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    margin: 10px;
 }
   
 footer {
@@ -110,4 +164,11 @@ footer {
 
 .hidden {
     display: none;
+}
+
+.result-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
