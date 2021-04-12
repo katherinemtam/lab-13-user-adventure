@@ -49,13 +49,16 @@ choiceForm.addEventListener('submit', (event) => {
 
     choiceForm.classList.add('hidden');
     const resultSection = document.createElement('div');
-    resultSection.textContent = choice.result;
+    const quote = document.createElement('p');
+    quote.textContent = choice.quote;
+    const result = document.createElement('p');
+    result.textContent = choice.result;
 
     const anchorTag = document.createElement('a');
     anchorTag.textContent = 'Back to Map';
     anchorTag.href = '../map';
 
-    resultSection.append(anchorTag);
+    resultSection.append(quote, result, anchorTag);
     section.append(resultSection);
 });
 
