@@ -1,17 +1,17 @@
 export const aliveGoldMessages = {
-    poor: 'you live as a poor beggar',
-    modest: 'you live in a modest hut farming the earth',
-    rich: 'you and your whole family live in small castle in luxury',
+    poor: "You're not gonna financially recover from this...",
+    modest: "You have a bit of bells still in your pocket. Why don't you consider investing in turnips?",
+    rich: "Looks like you're on your way to making this a 5-star island!",
 };
 
 export const deadGoldMessages = {
-    poor: 'you leave nothing for your family',
-    modest: 'you leave enough to buy your family a turkey dinner at the pub',
-    rich: 'your family builds a monument in your honor'
+    poor: 'The ocean engulfs your body...Gulliver finds you washed up on shore and pickpockets you.',
+    modest: "Your bells were burried at your grave. It's too little to take, but not enough to keep.",
+    rich: "Tom Nook moves into your house...I guess you don't need it anymore. He's living quite a comfortable life with Timmmy & Tommy and all your riches."
 };
 
 export const hpMessages = {
-    dead: 'you are dead',
-    frail: 'you retire in frail health',
-    healthy: 'you retire and live a long life in good health',
+    dead: 'Oh no! You died. That sucks...well, at least you can be best friends with Wisp forever!',
+    frail: 'You barely survived! Who find some wasp nests to make medicine. Just make sure not to get stung by the wasps.',
+    healthy: "You're big. You're strong. There's nothing standing in your way!",
 };

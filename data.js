@@ -8,7 +8,7 @@ const museum = {
         top: '89%',
         left: '44%'
     },
-    image: 'monsters.jpg',
+    image: 'museum.jpg',
     description: `
         Signs suggest that tonight there will be a meteor shower! You enter the museum and see three birds: Blathers (Museum’s Director), Celeste (Stargazing Aficionado), and Brewster (Barista, Coffee Connoisseur). They welcome you and look at you with anticipation. Who did you come here to meet?
     `,
@@ -55,7 +55,7 @@ const residentialServices = {
         top: '17%',
         left: '37%'
     },
-    image: 'dragon.jpg',
+    image: 'residential-services.jpg',
     description: `
         You're at the main hub for the island's development! This is where you can find Tom Nook and Isabelle. Head of Nook Incorporated, Tom Nook oversees all the development on the island. From building bridges to upgrading your house, you need to go through him. Talk to Isabelle about the reputation and image of your island. She'll try to turn your frown upside down and help with any residents that might be troublesome. Since ${user.island} has risen in popularity, people are visiting from all over the world, especially K.K. Slider. K.K. Slider is a traveling musician who is enamored with the island and visits every Saturday to perform at the Town Plaza. What do you do?
     `,
@@ -88,10 +88,10 @@ const residentialServices = {
             K.K. Slider: “Hey there, cool cats and kittens. The name's K.K. Slider. Live jams make for a real keen scene. Nothing beats a whole crowd getting down together. Oh, they're telling me I've gotta fill a little more time...Want me to jam for you?”
         `,
         result: `
-            Before K.K. Slider performs, he gives everyone in the audience a copy of the song he's about the play! His laid-back, relaxed vibes help you feel mellow and calm. You gain 50 HP You are entranced by his music and look up his discography on your NookPhone. You see that he has an alter ego, DJ K.K. You can't imagine him being outgoing and active, becoming a so-called "life of the party".
+            Before K.K. Slider performs, he gives everyone in the audience a copy of one of his secret songs! These are rare. It's worth 3,299 bells. His laid-back, relaxed vibes help you feel mellow and calm. You gain 50 HP You are entranced by his music and look up his discography on your NookPhone. You see that he has an alter ego, DJ K.K. You can't imagine him being outgoing and active, becoming a so-called "life of the party".
         `,
         hp: 30,
-        bells: 0
+        bells: 3200
     }]
 };
 
@@ -103,7 +103,7 @@ const airline = {
         left: '5%'
     },
     prerequisites: ['dragon', 'monsters'],
-    image: 'treasure-chests.png',
+    image: 'airline.jpg',
     description: `
         Orville: “Hey hey hey! Welcome to your one and only gateway to the skies, ${user.island} Airport. Let me call Wilbur: Dodo One, this is Dodo Tower. Wilbur, you copy? Got a walker who needs wings, over.” 
         Wilbur: “Roger! Ready when you are!” 
@@ -117,9 +117,9 @@ const airline = {
             Harvey: “...Hey! I hear you. We're still groovy, and the anniversary shoot's gonna happen. Hmmm...Well, OK, but...what'll we do about the lovely sets? Prepping them ourselves could get a bit ticklish...Hey there. You got good timing, you know that? Can I, like, borrow you for a minute? OK, so this here is Reese...and her main squeeze, Cyrus. They're married and in love, um...a whole bunch. Far out, right? Anyway, they wanna get some anniversary photos made. Fancy ones. With sets and stuff. Long story, uh...long, I need someone to move stuff around so it looks wedding-y, then snap some photos. So, think I could ask you to be taht someone? You'd really be helping this shutterdog out.”
         `,
         result: `
-            It's Wedding Season! You agree to help out with the special wedding themed photo shoot featuring Reese and Cyrus. You walk into Photopia and move things around here and there on set to make things look wedding-y. You snap a few photos and show Cyrus and Reese. They love it! You've somehow captures all the joy and love that Cyrus and Reese share in one amazing photo. As a way of showing their appreciation, they have a little something for you: some wedding decorations. It's worth 250 bells.
+            It's Wedding Season! You agree to help out with the special wedding themed photo shoot featuring Reese and Cyrus. You walk into Photopia and move things around here and there on set to make things look wedding-y. You snap a few photos and show Cyrus and Reese. They love it! You've somehow captures all the joy and love that Cyrus and Reese share in one amazing photo. As a way of showing their appreciation, they have a little something for you: some wedding decorations. It's worth 250 bells. It's been a long day; you lose 50 HP, but at least you worked out your muscles moving things around!
         `,
-        hp: 0,
+        hp: -50,
         bells: 250
     }, {
         id: 'mysteryIsland',
