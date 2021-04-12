@@ -19,15 +19,15 @@ if (user.hp <= 0) {
 }
 
 let goldStatus;
-if (user.gold <= 0 && user.hp <= 0) {
+if (user.bells <= 0 && user.hp <= 0) {
     goldStatus = deadGoldMessages.poor;
-} else if (user.gold <= 1000 && user.hp <= 0) {
+} else if (user.bells <= 1000 && user.hp <= 0) {
     goldStatus = deadGoldMessages.modest;
-} else if (user.gold > 1000 && user.hp <= 0) {
+} else if (user.bells > 1000 && user.hp <= 0) {
     goldStatus = deadGoldMessages.rich;
-} else if (user.gold <= 0) {
+} else if (user.bells <= 0) {
     goldStatus = aliveGoldMessages.poor;
-} else if (user.gold < 1000) {
+} else if (user.bells < 1000) {
     goldStatus = aliveGoldMessages.modest;
 } else {
     goldStatus = aliveGoldMessages.rich;

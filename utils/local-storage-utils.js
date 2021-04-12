@@ -15,7 +15,7 @@ export function updateUserInfo(questId, choice) {
     const user = getUser();
 
     user.hp += choice.hp;
-    user.gold += choice.gold;
+    user.bells += choice.bells;
     user.completed[questId] = true;
 
     setUser(user);
