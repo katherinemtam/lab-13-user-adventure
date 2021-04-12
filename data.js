@@ -8,7 +8,7 @@ const museum = {
         top: '89%',
         left: '44%'
     },
-    image: 'monsters.jpg',
+    image: 'museum.jpg',
     description: `
         Signs suggest that tonight there will be a meteor shower! You enter the museum and see three birds: Blathers (Museum’s Director), Celeste (Stargazing Aficionado), and Brewster (Barista, Coffee Connoisseur). They welcome you and look at you with anticipation. Who did you come here to meet?
     `,
@@ -55,7 +55,7 @@ const residentialServices = {
         top: '17%',
         left: '37%'
     },
-    image: 'dragon.jpg',
+    image: 'residential-services.jpg',
     description: `
         You're at the main hub for the island's development! This is where you can find Tom Nook and Isabelle. Head of Nook Incorporated, Tom Nook oversees all the development on the island. From building bridges to upgrading your house, you need to go through him. Talk to Isabelle about the reputation and image of your island. She'll try to turn your frown upside down and help with any residents that might be troublesome. Since ${user.island} has risen in popularity, people are visiting from all over the world, especially K.K. Slider. K.K. Slider is a traveling musician who is enamored with the island and visits every Saturday to perform at the Town Plaza. What do you do?
     `,
@@ -103,7 +103,7 @@ const airline = {
         left: '5%'
     },
     prerequisites: ['dragon', 'monsters'],
-    image: 'treasure-chests.png',
+    image: 'airline.jpg',
     description: `
         Orville: “Hey hey hey! Welcome to your one and only gateway to the skies, ${user.island} Airport. Let me call Wilbur: Dodo One, this is Dodo Tower. Wilbur, you copy? Got a walker who needs wings, over.” 
         Wilbur: “Roger! Ready when you are!” 

@@ -138,3 +138,7 @@ p {
 input {
     margin: 10px;
 }
+
+.anchorTag{
+    background-color: url('../assets/background2.png');
+}

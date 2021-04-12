@@ -5,7 +5,7 @@ export const aliveGoldMessages = {
 };
 
 export const deadGoldMessages = {
-    poor: "The ocean engulfs your body...Maybe it'll end up wherever Gulliver is.",
+    poor: 'The ocean engulfs your body...Gulliver finds you washed up on shore and pickpockets you.',
     modest: "Your bells were burried at your grave. It's too little to take, but not enough to keep.",
     rich: "Tom Nook moves into your house...I guess you don't need it anymore. He's living quite a comfortable life with Timmmy & Tommy and all your riches."
 };
