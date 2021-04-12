@@ -14,7 +14,7 @@ form.addEventListener('submit', (event) => {
         name: userName,
         island: island,
         hp: 100,
-        bells: 0,
+        bells: 500,
         completed: {}
     };
 
