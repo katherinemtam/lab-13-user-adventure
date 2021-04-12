@@ -8,13 +8,13 @@ form.addEventListener('submit', (event) => {
     const data = new FormData(form);
 
     const userName = data.get('username');
-    const userClass = data.get('class');
+    const island = data.get('island');
 
     const user = {
         name: userName,
-        class: userClass,
-        hp: 35,
-        gold: 0,
+        island: island,
+        hp: 100,
+        bells: 0,
         completed: {}
     };
 

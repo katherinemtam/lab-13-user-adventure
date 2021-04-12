@@ -9,62 +9,43 @@
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/home.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;800&display=swap" rel="stylesheet">
     <title>Character Creation</title>
 </head>
 
 <body>
     <header>
-        <div class="gutter-right logo">
 
-        </div>
     </header>
     <main>
+        <section class="intro">
+
+        </section>
         <section class="main-section">
+
             <h2>
-                You are about to enter...
+                Profile Creation
             </h2>
-            <p>
-                Insert some story about the journet youre about to embark
+            <p class="instructions">
+                Let's set up your profile! Timmy and Tommy will be flying to the island with you to help you get
+                settled. Please fill out the application below to get started.
             </p>
             <form>
                 <label>
                     <p>What's your character name?</p>
-                    <input name="username" placeholder="username" />
+                    <input name="username" placeholder="name" />
                 </label>
-                <fieldset>
-                    <legend>Choose your specialty:</legend>
-                    <label>
-                        <input type="radio" name="class" required value="warrior">
-                        <img src="assets/">
-                        Warrior
-                    </label>
-                    <label>
-                        <input type="radio" name="class" required value="assassin">
-                        <img src="assets/">
-                        Assassin
-                    </label>
-                    <label>
-                        <input type="radio" name="class" required value="wizard">
-                        <img src="assets/">
-                        Wizard
-                    </label>
-                    <label>
-                        <input type="radio" name="class" required value="cleric">
-                        <img src="assets/">
-                        Cleric
-                    </label>
-                    <label>
-                        <input type="radio" name="class" required value="bard">
-                        <img src="assets/">
-                        Bard
-                    </label>
-                </fieldset>
-                <button>Begin Your Journey</button>
+                <label>
+                    <p>Suggest a name for the island!</p>
+                    <input name="island" placeholder="island" />
+                </label>
+                <button>Fly to your island!</button>
             </form>
         </section>
     </main>
     <footer>
-        <div class="copy gutter-right">&copy; 2020 Alchemy Code Lab</div>
+        <div class="copy gutter-right">&copy; 2021 Isabelle5ever</div>
     </footer>
 
     <script type="module" src="app.js"></script>
