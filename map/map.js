@@ -1,6 +1,7 @@
 import quests from '../data.js';
-import { getUser, allQuestsCompleted } from '../utils/local-storage-utils.js';
+import { getUser } from '../utils/local-storage-utils.js';
 import { renderProfile } from '../utils/render-utils.js';
+import { allQuestsCompleted, comepletedQuest, pendingQuest } from '../utils/quests-utils.js';
 
 const user = getUser();
 
@@ -23,10 +24,12 @@ if (userDied || allQuestsCompleted(quests, user)) {
 }
 
 for (let quest of quests) {
-    const anchorTag = document.createElement('a');
-    anchorTag.style.backgroundColor = 'rgb(255, 255, 250)';
-    anchorTag.textContent = quest.title;
-    anchorTag.href = `../quests/?id=${quest.id}`;
-    section.append(anchorTag);
+    let generateQuest;
+    if (user.completed[quest.id]) {
+        generateQuest = comepletedQuest(quest);
+    } else {
+        generateQuest = pendingQuest(quest);
+    }
+    section.append(generateQuest);
 }
 

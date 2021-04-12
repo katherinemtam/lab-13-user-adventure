@@ -12,6 +12,6 @@ export const deadGoldMessages = {
 
 export const hpMessages = {
     dead: 'Oh no! You died. That sucks...well, at least you can be best friends with Wisp forever!',
-    frail: 'You barely survived! Who find some wasp nests to make medicine. Just make sure not to get stung by the wasps.',
+    frail: 'You barely survived! Go find some wasp nests to make medicine. Just make sure not to get stung by the wasps.',
     healthy: "You're big. You're strong. There's nothing standing in your way!",
 };
