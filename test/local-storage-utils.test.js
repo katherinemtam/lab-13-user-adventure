@@ -41,13 +41,13 @@ test('setUser should put user information to local storage', (expect) => {
 });
 
 // test updateUserInfo()
-test('updateUserInfo should update hp, gold, and completed properties based on choice', (expect) => {
+test('updateUserInfo should update hp, bells, and completed properties based on choice', (expect) => {
 
     const user = {
         name: 'user',
         class: 'wizard',
         hp: 35,
-        gold: 0,
+        bells: 0,
         completed: {}
     };
 
@@ -56,14 +56,14 @@ test('updateUserInfo should update hp, gold, and completed properties based on c
 
     const choice = {
         hp: -10,
-        gold: 500
+        bells: 500
     };
 
     const expected = {
         name: 'user',
         class: 'wizard',
         hp: 25,
-        gold: 500,
+        bells: 500,
         completed: {
             dragon: true
         }
